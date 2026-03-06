@@ -4,14 +4,9 @@ import warnings
 import traceback
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
-try:
-    from openpyxl import load_workbook, Workbook
-    from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
-    from openpyxl.utils import get_column_letter
-except ImportError:
-    print("错误：缺少依赖库 openpyxl，请执行：pip install openpyxl")
-    input("\n按回车键退出...")
-    sys.exit(1)
+from openpyxl import load_workbook, Workbook
+from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
+from openpyxl.utils import get_column_letter
 
 HEADER_FILL = PatternFill("solid", fgColor="646A73")
 HEADER_FONT = Font(name="宋体", bold=True, color="FFFFFF", size=14)

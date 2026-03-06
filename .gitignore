@@ -42,3 +42,10 @@ Thumbs.db
 # Icons
 *.ico
 *.png
+
+# Output
+output/
+
+# Data files
+*.xlsx
+*.xls
